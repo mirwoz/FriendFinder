@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Game of Thrones Friend Finder</h2>
+    <br>
+    <h4>Answer the questions below to find your Westerosi Pal</h4>
+    <br>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="firstname" name="firstname"><br>
+
+        <br>
+        <label for="questionOne">Do you like Dogs?</label>
+        <select name="questionOne">
+            <option value="1">No</option>
+            <option value="2">Yes</option>
+        </select>
+        <br>
+        <label for="questionTwo">Do you drink wine?</label>
+        <select name="questionTwo">
+            <option value="1">Never</option>
+            <option value="2">Occasionally</option>
+            <option value="3">Often</option>
+            <option value="4">Every day</option>
+        </select>
+        <br>
+        <label for="questionThree">How sarcastic are you?</label>
+        <select name="questionThree">
+            <option value="1">Not at all</option>
+            <option value="2">A little</option>
+            <option value="3">Very</option>
+            <option value="4">I can't take anything seriously</option>
+        </select>
+        <br>
+        <label for="questionFour">Do you enjoy the outdoors?</label>
+        <select name="questionFour">
+            <option value="1">Does my yard count?</option>
+            <option value="2">Yes, but limited</option>
+            <option value="3">I enjoy lots of outdoor activities</option>
+            <option value="4">I basically live outside</option>
+        </select>
+        <br>
+        <label for="questionFive">Warm or cold weather?</label>
+        <select name="questionFive">
+            <option value="1">Frigid!</option>
+            <option value="2">Very cold</option>
+            <option value="3">Warm</option>
+            <option value="4">Tropical</option>
+        </select>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary">Click to submit</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <div id="resultsDiv">
+        <h1 id="yourResults">Meet your new Best Friend!</h1>
+        <h1 id="matchName"></h1>
+        <img id="matchPhoto" src="">
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
